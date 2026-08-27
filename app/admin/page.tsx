@@ -39,6 +39,29 @@ Bana şunları ver:
 1. Hikayenin merkezinde yazacak kısa, elit bildirim metni.
 2. Link Çıkartmasının (Sticker) üzerinde yazması gereken eylem çağrısı (Örn: 'Sorgula').
 3. Görselin arka planı için estetik bir talimat (Örn: simsiyah, ufak turuncu detaylar).`
+  },
+  {
+    id: 4,
+    title: "Kognitif İtaat Zinciri (Carousel/Kaydırmalı)",
+    themes: [
+      "Ego ve Sürü Psikolojisi", 
+      "Özgür İrade İllüzyonu", 
+      "Sahte Başarı ve Statü", 
+      "Zekanın Getirdiği Yalıtılmışlık"
+    ],
+    promptTemplate: `Sen dünyanın en üst düzey, premium ve gizemli psikolojik analiz markası olan 'Archetype'ın metin yazarısın. Markamız 'sessiz lüks' (quiet luxury) konseptini benimsiyor.
+Bana Instagram için 5 sayfalık (kaydırmalı/carousel) bir gönderi serisi hazırla. Konu teması: [TEMA_BURAYA_GELECEK]. 
+Strateji: Okuyucunun egosunu okşayıp, onu sıradan kalabalıklardan (sürüden) ayıran soğuk, mesafeli ve felsefi gerçekler sunmak. Metinler son derece kısa ve vurucu olmalı.
+
+Bana şunları ver:
+1. Sayfa (Kanca): Merak uyandıran, bilerek yarım bırakılmış kısa bir tespit (Zeigarnik Etkisi).
+2. Sayfa (Agitasyon): Kalabalıkların (sıradan insanların) ne kadar sahte veya bilinçsiz olduğunu yüzlerine vuran tek bir cümle.
+3. Sayfa (Yüzleşme): Kesinlikle ekran görüntüsü alınacak derin, rahatsız edici ve soğuk bir gerçek (aforizma).
+4. Sayfa (Ayrıştırma): Okuyucunun zeki, cesur veya farklı olduğu için yalnız kaldığını hissettiren cümle (Kibrin okşanması).
+5. Sayfa (İnfaz): Sadece şu yazacak: '[Sistem şu an yeni analizlere kapalıdır.]'
+
+6. Açıklama (Caption): Gönderinin ana fikrini özetleyen mesafeli tek bir cümle ve sonuna eklenecek 'Mühür No: [RASTGELE_4_HANELİ_SAYI]'.
+Sadece 4 adet niş hashtag kullan.`
   }
 ];
 
