@@ -15,28 +15,28 @@ const DimensionCard: React.FC<DimensionCardProps> = ({ label, score }) => {
   let description = "";
   
   if (label === "CONTROL") {
-    if (score <= 25) mappedLabel = dimDict.flexible;
-    else if (score <= 50) mappedLabel = dimDict.adaptive;
-    else if (score <= 75) mappedLabel = dimDict.structured;
-    else mappedLabel = dimDict.high;
+    if (score <= 25) mappedLabel = (dimDict as any).flexible;
+    else if (score <= 50) mappedLabel = (dimDict as any).adaptive;
+    else if (score <= 75) mappedLabel = (dimDict as any).structured;
+    else mappedLabel = (dimDict as any).high;
     description = score > 50 ? dimDict.desc_high : dimDict.desc_low;
   } else if (label === "SOCIAL") {
-    if (score <= 25) mappedLabel = dimDict.private;
-    else if (score <= 50) mappedLabel = dimDict.selective;
-    else if (score <= 75) mappedLabel = dimDict.open;
-    else mappedLabel = dimDict.high;
+    if (score <= 25) mappedLabel = (dimDict as any).private;
+    else if (score <= 50) mappedLabel = (dimDict as any).selective;
+    else if (score <= 75) mappedLabel = (dimDict as any).open;
+    else mappedLabel = (dimDict as any).high;
     description = score > 50 ? dimDict.desc_high : dimDict.desc_low;
   } else if (label === "DECISION") {
-    if (score <= 25) mappedLabel = dimDict.intuitive;
-    else if (score <= 50) mappedLabel = dimDict.instinctive;
-    else if (score <= 75) mappedLabel = dimDict.deliberate;
-    else mappedLabel = dimDict.analytical;
+    if (score <= 25) mappedLabel = (dimDict as any).intuitive;
+    else if (score <= 50) mappedLabel = (dimDict as any).instinctive;
+    else if (score <= 75) mappedLabel = (dimDict as any).deliberate;
+    else mappedLabel = (dimDict as any).analytical;
     description = score > 50 ? dimDict.desc_high : dimDict.desc_low;
   } else if (label === "EMOTION") {
-    if (score <= 25) mappedLabel = dimDict.reserved;
-    else if (score <= 50) mappedLabel = dimDict.guarded;
-    else if (score <= 75) mappedLabel = dimDict.open;
-    else mappedLabel = dimDict.expressive;
+    if (score <= 25) mappedLabel = (dimDict as any).reserved;
+    else if (score <= 50) mappedLabel = (dimDict as any).guarded;
+    else if (score <= 75) mappedLabel = (dimDict as any).open;
+    else mappedLabel = (dimDict as any).expressive;
     description = score > 50 ? dimDict.desc_high : dimDict.desc_low;
   }
 

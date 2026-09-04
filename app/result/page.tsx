@@ -103,7 +103,7 @@ export default function ResultPage() {
       <DeepProfileCTA />
       
       {publicToken && (
-        <ShareButton publicToken={publicToken} />
+        <ShareButton publicToken={publicToken} archetypeId={result.primary.id} />
       )}
     </div>
   );
